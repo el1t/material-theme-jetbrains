@@ -58,9 +58,6 @@
             <implementation-class>com.chrisrm.idea.MTColorScheme</implementation-class>
         </component>
         <component>
-            <implementation-class>com.chrisrm.idea.MTTabsPainterPatcher</implementation-class>
-        </component>
-        <component>
             <implementation-class>com.chrisrm.idea.MTIconReplacer</implementation-class>
         </component>
         <component>
@@ -72,23 +69,6 @@
     </project-components>
 
     <actions>
-        <group id="MaterialTheme" text="Material Theme" popup="true" icon="/icons/actions/material-theme.png">
-            <add-to-group group-id="ToolsMenu" anchor="last"/>
-            <add-to-group group-id="MainToolBar" anchor="last"/>
-
-            <action id="MTDarkerTheme" class="com.chrisrm.idea.actions.MTDarkerTheme"
-                    text="Darker Theme" description="Material Theme - Darker"
-                    icon="/icons/actions/theme-darker.png">
-            </action>
-            <action id="MTDefaultTheme" class="com.chrisrm.idea.actions.MTDefaultTheme"
-                    text="Default Theme" description="Material Theme - Default"
-                    icon="/icons/actions/theme-default.png">
-            </action>
-            <action id="MTLighterTheme" class="com.chrisrm.idea.actions.MTLighterTheme"
-                    text="Lighter Theme" description="Material Theme - Lighter"
-                    icon="/icons/actions/theme-lighter.png">
-            </action>
-        </group>
     </actions>
 
     <module-components>
