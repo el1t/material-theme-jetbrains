@@ -1,13 +1,9 @@
-# Material Theme UI for Jetbrains 
+# Spacegray Theme UI for Jetbrains 
 
-This is a [Material Theme](https://github.com/equinusocio/material-theme) port of both the IDE and Color scheme for JetBrains products.
+This is a [Spacegray Theme](https://github.com/kkga/spacegray) port of both the IDE ~~and Color scheme~~ for JetBrains products. This fork uses warmer colors and removes some unused UI elements.
+I have not added regular or light color variations, only a warmer version of Eighties, designed for use with Monokai. If there's interest for any of these please submit an issue.
 
 **Please note:** This is a work in progress. There are some work to be done before this can be considered stable.
-
-Peacock fan? Check out this theme by [@daylerees](https://github.com/daylerees): https://github.com/daylerees/material-peacock
-
-Buy me a beer: 
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=LSF7K29JBPMWU&lc=US&item_name=Material%20Theme%20JetBrains%20Development&item_number=m1&currency_code=NOK&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted)
 
 ## Plugin
 * [Support](#supported-ides)
@@ -26,6 +22,8 @@ Thanks to the awesome guys at [JetBrains](https://www.jetbrains.com/) the plugin
 _EAP releases only partly supported_
 
 ## Installation
+_Not on the plugin repository at this time. To install, load the zip (or build it yourself) using the "Install plugin from disk" option._
+
 1. [Open the Settings/Preferences dialog](https://www.jetbrains.com/idea/help/accessing-settings.html#openIdeSettings) (OSX/Unix: <kbd>⌘,</kbd>, Windows: <kbd>Ctrl+Alt+S</kbd>)
 2. In the left-hand pane, select **Plugins**.
 3. Click **Browse repositories...** and search for `Material Theme UI`
@@ -33,6 +31,7 @@ _EAP releases only partly supported_
 5. Click **OK** in the **Settings** dialog and restart for the changes to take effect.
 
 ### Set color scheme
+#### _Spacegray syntax scheme(s) not included... yet. But you can install them seperately until they are._
 This plugin will not set the new color scheme for you, as that would cause a couple problems. You need to set the new color scheme manually:
 
 1. Open the **Settings/Preferences** dialog again.
@@ -48,21 +47,21 @@ I would love to get some help on the colour schemes. Send me a pull request!
 
 ## Screenshots
 #### Choose theme
-![Choose theme](http://cdn.hifive.no/material-ui/theme-chooser.png)
+_Button removed for now_
 
 #### Darker theme
-![Darker theme](http://cdn.hifive.no/material-ui/theme-darker.png)
+_Does not exist yet_
 
 #### Default theme
-![Default theme](http://cdn.hifive.no/material-ui/theme-default.png)
+![Default theme](screenshots/eighties monokai.png)
 
 #### Lighter theme
 
 Not yet..
 
 # Author
+### Spacegray
+Original theme by [kkga](https://github.com/kkga)
+
+### Material Port
 Twitter: [@crmag](https://twitter.com/crmag)
-
-**Thanks to [@equinusocio](https://github.com/equinusocio/material-theme) for making the Color Scheme.**
-
-Thanks to all [contributors](https://github.com/ChrisRM/material-theme-jetbrains/graphs/contributors) and a special thanks to the guys at [JetBrains](https://www.jetbrains.com/) for contributing and showing interest in the project!
