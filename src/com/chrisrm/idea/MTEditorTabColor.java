@@ -11,9 +11,9 @@ import java.awt.*;
 
 public class MTEditorTabColor implements EditorTabColorProvider {
 
-    private static final Color COLOR_DARKER = new JBColor(new Color(33, 33, 33, 255), new Color(33, 33, 33, 255));
-    private static final Color COLOR_DEFAULT = new JBColor(new Color(31, 31, 27, 255), new Color(31, 31, 27, 255));
-    private static final Color COLOR_LIGHTER = new JBColor(new Color(250, 250, 250, 255), new Color(250, 250, 250, 255));
+    private static final Color COLOR_DARKER = new JBColor(new Color(39, 40, 34, 255), new Color(39, 40, 34, 255));
+    private static final Color COLOR_DEFAULT = new JBColor(new Color(43, 48, 59, 255), new Color(43, 48, 59, 255));
+    private static final Color COLOR_LIGHTER = new JBColor(new Color(239, 241, 245, 255), new Color(239, 241, 245, 255));
 
     @Nullable
     @Override

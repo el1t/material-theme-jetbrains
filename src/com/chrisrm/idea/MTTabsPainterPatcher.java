@@ -12,16 +12,13 @@ import com.intellij.ui.tabs.impl.JBEditorTabs;
 import com.intellij.ui.tabs.impl.JBEditorTabsPainter;
 import com.intellij.util.ReflectionUtil;
 import com.intellij.util.messages.MessageBus;
-import net.sf.cglib.proxy.Enhancer;
-import net.sf.cglib.proxy.MethodInterceptor;
-import net.sf.cglib.proxy.MethodProxy;
+
 import org.jetbrains.annotations.NotNull;
 
-import javax.swing.border.LineBorder;
-import java.awt.*;
+import java.awt.Color;
+import java.awt.Component;
 import java.io.IOException;
 import java.io.InputStream;
-import java.lang.reflect.Method;
 import java.util.Properties;
 
 /**
@@ -71,25 +68,7 @@ public class MTTabsPainterPatcher implements ApplicationComponent {
 
         if (painter instanceof MTTabsPainter) return;
 
-        final MTTabsPainter tabsPainter = new MTTabsPainter();
-        final JBEditorTabsPainter proxy = (MTTabsPainter) Enhancer.create(MTTabsPainter.class, new MethodInterceptor() {
-            @Override
-            public Object intercept(Object o, Method method, Object[] objects, MethodProxy methodProxy) throws Throwable {
-                final Object result = method.invoke(tabsPainter, objects);
-
-                if ("paintSelectionAndBorder".equals(method.getName())) {
-                    final Graphics2D g2d = (Graphics2D) objects[0];
-                    final Rectangle rect = (Rectangle) objects[1];
-
-                    g2d.setColor(ColorUtil.fromHex("#" + properties.getProperty("material.tab.border")));
-                    g2d.fillRect(rect.x, rect.y + rect.height - 2, rect.width, 2);
-                }
-
-                return result;
-            }
-        });
-
-        ReflectionUtil.setField(JBEditorTabs.class, component, JBEditorTabsPainter.class, "myDarkPainter", proxy);
+        ReflectionUtil.setField(JBEditorTabs.class, component, JBEditorTabsPainter.class, "myDarkPainter", new MTTabsPainter());
     }
 
     @Override

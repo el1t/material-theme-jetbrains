@@ -6,14 +6,15 @@ import com.chrisrm.idea.MTDataLayer;
 import com.chrisrm.idea.MTLaf;
 import com.intellij.ide.ui.UISettings;
 import com.intellij.openapi.actionSystem.impl.ActionToolbarImpl;
-import com.intellij.openapi.editor.colors.EditorColorsManager;
 import com.intellij.openapi.editor.colors.EditorColorsScheme;
 import com.intellij.openapi.util.IconLoader;
 import com.intellij.ui.JBColor;
 
-import javax.swing.*;
 import java.util.Arrays;
 import java.util.List;
+
+import javax.swing.UIManager;
+import javax.swing.UnsupportedLookAndFeelException;
 
 public class MTSwitchTheme {
 
@@ -31,10 +32,10 @@ public class MTSwitchTheme {
             e.printStackTrace();
         }
 
-        List<String> Schemes = Arrays.asList("Material Theme - Darker", "Material Theme - Default", "Material Theme - Lighter");
+        List<String> Schemes = Arrays.asList("Spacegray Theme - Darker", "Spacegray Theme - Default", "Spacegray Theme - Lighter");
         String currentScheme = colorSchemeManager.getGlobalColorScheme().getName();
 
-        String makeActiveScheme = (!Schemes.contains(currentScheme)) ? currentScheme : "Material Theme - " + theme;
+        String makeActiveScheme = (!Schemes.contains(currentScheme)) ? currentScheme : "Spacegray Theme - " + theme;
 
         final EditorColorsScheme scheme = colorSchemeManager.getScheme(makeActiveScheme);
         if (scheme != null) {
