@@ -2,6 +2,20 @@
 
 ## [Unreleased]
 
+## Fixed
+- Android Studio fix. #220
+- No need to override the application icons, so those are deleted.
+
+## 0.2.1
+- Hopefully a final fix for issue #205, IDEA-157843 and IDEA-156327
+
+## 0.2.0
+
+### Fixed
+- Improved visibility for diffs on default color scheme. Thanks @marvhock - #208
+- Hopefully fixed issue #205, [IDEA-157843](https://youtrack.jetbrains.com/issue/IDEA-157843) and [IDEA-156327](https://youtrack.jetbrains.com/issue/IDEA-156327)
+- Merged recent changes made to the platform
+
 ### Added
 - SidePanel background color (Preferences)
 
