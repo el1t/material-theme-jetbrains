@@ -23,7 +23,7 @@ _EAP releases only partly supported_
 ## Installation
 ### _Not on the plugin repository at this time. To install, load [Spacegray Theme.zip](./Spacegray Theme.zip) using the "Install plugin from disk" option._
 
-### Set color scheme
+### Set color scheme (code)
 This plugin will not set the new color scheme for you, as that would cause a couple problems. You need to set the new color scheme manually:
 
 1. Open the **Settings/Preferences** dialog again.
@@ -31,7 +31,27 @@ This plugin will not set the new color scheme for you, as that would cause a cou
 3. In the **Scheme** dropdown, you'll find 3 new schemes: `Spacegray Theme - Ocean`, `Spacegray Theme - Monokai` and `SpacegrayTheme - Light`.
 4. Choose the scheme you like and hit **Apply** and **OK**.
 
-Shortcut: <kbd>Ctrl+'</kbd> (that's a backtick) then hit `1. Color scheme` and select your desired color scheme.
+Shortcut: <kbd>Ctrl+\`</kbd> (that's a backtick) then hit `1. Color scheme` and select your desired color scheme. ## Development
+
+### Requirements
+
+* JDK 1.8
+
+### Building from the command line
+
+`./gradlew clean build`
+
+### Running a test instance with the plugin
+
+`./gradlew runIdea`
+
+### Developing using IntelliJ
+
+Import the project from the `build.gradle` file and develop as normal.  Make
+sure you select JDK 8 in the import wizard.  The other defaults are fine.  You
+can run the above mentioned CLI Gradle tasks directly in the "Gradle" Tool
+Window, which expands from the right side of the screen.  To debug, find
+"runIdea" in the list, right-click it, and choose Debug.
 
 ## Screenshots
 #### Choose theme
@@ -51,4 +71,4 @@ Shortcut: <kbd>Ctrl+'</kbd> (that's a backtick) then hit `1. Color scheme` and s
 Original theme by [kkga](https://github.com/kkga)
 
 ### Material Theme to Jetbrains Port
-Twitter: [@crmag](https://twitter.com/crmag)
+[Here](https://github.com/ChrisRM/material-theme-jetbrains).
