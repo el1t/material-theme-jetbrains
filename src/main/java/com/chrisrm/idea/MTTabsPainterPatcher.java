@@ -74,13 +74,13 @@ public class MTTabsPainterPatcher implements ApplicationComponent {
         e.setCallback((MethodInterceptor) (o, method, objects, methodProxy) -> {
             final Object result = method.invoke(tabsPainter, objects);
 
-            if ("paintSelectionAndBorder".equals(method.getName())) {
-                final Graphics2D g2d = (Graphics2D) objects[0];
-                final Rectangle rect = (Rectangle) objects[1];
-
-                g2d.setColor(ColorUtil.fromHex("#" + properties.getProperty("material.tab.borderColor")));
-                g2d.fillRect(rect.x, rect.y + rect.height - 2, rect.width, 2);
-            }
+//            if ("paintSelectionAndBorder".equals(method.getName())) {
+//                final Graphics2D g2d = (Graphics2D) objects[0];
+//                final Rectangle rect = (Rectangle) objects[1];
+//
+//                g2d.setColor(ColorUtil.fromHex("#" + properties.getProperty("material.tab.borderColor")));
+//                g2d.fillRect(rect.x, rect.y + rect.height - 2, rect.width, 2);
+//            }
 
             return result;
         });
@@ -102,9 +102,11 @@ public class MTTabsPainterPatcher implements ApplicationComponent {
 
 
     public static class MTTabsPainter extends DefaultEditorTabsPainter {
+    	Properties properties;
 
         public MTTabsPainter(JBEditorTabs tabs) {
             super(tabs);
+            this.properties = getProperties();
         }
 
         @Override
@@ -112,8 +114,6 @@ public class MTTabsPainterPatcher implements ApplicationComponent {
             if (myDefaultTabColor != null) {
                 return myDefaultTabColor;
             }
-
-            Properties properties = getProperties();
 
             return ColorUtil.fromHex("#" + properties.getProperty("material.tab.backgroundColor"));
         }

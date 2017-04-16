@@ -10,7 +10,6 @@ import javax.swing.*;
 public class MTLighterTheme extends AnAction {
     @Override
     public void actionPerformed(AnActionEvent anActionEvent) {
-        JOptionPane.showMessageDialog(null, "Keep in mind, the lighter theme is a work in progress and there will be some issues.", "Work in progress", JOptionPane.INFORMATION_MESSAGE);
         MTTheme.LIGHTER.activate();
     }
 }

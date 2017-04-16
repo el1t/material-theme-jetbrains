@@ -1,7 +1,7 @@
-<idea-plugin version="2">
+<idea-plugin>
     <id>com.el1t.idea.SpacegrayThemeUI</id>
     <name>Spacegray Theme UI</name>
-    <version>0.1</version>
+    <version>0.2</version>
 
     <description><![CDATA[
         This will add the <a href="https://github.com/kkga/spacegray">Spacegray Theme</a> look to your IDE.<br/><br/>
@@ -9,6 +9,10 @@
 
     <change-notes><![CDATA[
     <html>
+        <b>Release v0.2</b>
+        <ul>
+            <li>Fixed crashes for Intellij 2017</li>
+        </ul>
         <b>Release v0.1</b>
         <ul>
             <li>Added Ocean, Light, and Monokai syntax color schemes</li>

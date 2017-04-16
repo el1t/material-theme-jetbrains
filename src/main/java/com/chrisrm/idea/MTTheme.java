@@ -10,23 +10,21 @@ import com.intellij.openapi.editor.colors.EditorColorsScheme;
 import com.intellij.openapi.extensions.PluginId;
 import com.intellij.openapi.util.IconLoader;
 import com.intellij.ui.JBColor;
-
-import java.awt.*;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import javax.swing.*;
-import javax.swing.plaf.*;
-
 import com.intellij.util.ui.JBUI;
 import org.jetbrains.annotations.NonNls;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
+import javax.swing.*;
+import javax.swing.plaf.FontUIResource;
+import java.awt.*;
+import java.util.ArrayList;
+import java.util.List;
+
 public enum MTTheme {
-    DARKER("mt.darker", "Material Theme - Darker", true),
-    DEFAULT("mt.default", "Material Theme - Default", true),
-    LIGHTER("mt.lighter", "Material Theme - Lighter", false);
+    DARKER("mt.darker", "Spacegray Theme - Monokai", true),
+    DEFAULT("mt.default", "Spacegray Theme - Ocean", true),
+    LIGHTER("mt.lighter", "Spacegray Theme - Light", false);
 
     @NonNls
     private static final String[] ourPatchableFontResources = {"Button.font", "ToggleButton.font", "RadioButton.font",
