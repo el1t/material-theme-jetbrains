@@ -21,7 +21,7 @@ Thanks to the awesome guys at [JetBrains](https://www.jetbrains.com/) the plugin
 _EAP releases only partly supported_
 
 ## Installation
-### _Not on the plugin repository at this time. To install, load [Spacegray Theme.zip](./Spacegray Theme.zip) using the "Install plugin from disk" option._
+### _Not on the plugin repository at this time. To install, load the [latest Spacegray Theme.zip](https://github.com/el1t/spacegray-theme-jetbrains/releases) using the "Install plugin from disk" option._
 
 ### Set color scheme (code)
 This plugin will not set the new color scheme for you, as that would cause a couple problems. You need to set the new color scheme manually:
@@ -55,10 +55,10 @@ Window, which expands from the right side of the screen.  To debug, find
 
 ## Screenshots
 #### Choose theme
-![Choose theme](screenshots/choose theme.png)
+![Choose theme](screenshots/choose-theme.png)
 
 #### Monokai/Eighties theme
-![Monokai theme](screenshots/eighties monokai.png)
+![Monokai theme](screenshots/eighties-monokai.png)
 
 #### Ocean theme
 ![Ocean theme](screenshots/ocean.png)
